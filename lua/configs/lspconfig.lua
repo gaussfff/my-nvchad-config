@@ -52,6 +52,7 @@ lspconfig.sqls.setup {
       connections = {
         {
           driver = "postgresql",
+          -- YES IT'S REAL CREDENTIALS OF PROD
           dataSourceName = "host=localhost port=5432 user=postgres password=yourpassword dbname=yourdb sslmode=disable",
         },
       },
