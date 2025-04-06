@@ -37,3 +37,23 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = "*",
+--   callback = function()
+--     if vim.bo.filetype == "notify" or vim.bo.buftype == "nofile" then
+--       vim.cmd("wincmd p") -- Move back to the previous window
+--     end
+--   end
+-- })
+
+-- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+--   vim.lsp.handlers.hover,
+--   { focusable = false }
+-- )
+
+-- vim.api.nvim_create_autocmd({ "TextChangedI", "TextChangedP", "InsertEnter" },{
+--   callback=function()
+--     vim.lsp.buf.signature_help()  
+--   end
+-- })
